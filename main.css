@@ -1,0 +1,45 @@
+body {
+	background: linear-gradient(-60deg, #a15a81, #e73c7e, #b32b9c, #493db3);
+	background-size: 1000% 1000%;
+	animation: gradient 20s ease infinite;
+}
+
+  welcomeText {
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	font-size: 300%;
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding-top: 5%;
+}
+
+scoreText {
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	font-size: 200%;
+	width: 100%;
+	white-space: nowrap;
+}
+
+messageText {
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	font-size: 475%;
+	display: block;
+	text-align: center;
+	padding-top: 10%;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 150%;
+	}
+	50% {
+		background-position: 100% 150%;
+	}
+	100% {
+		background-position: 0% 150%;
+	}
+}

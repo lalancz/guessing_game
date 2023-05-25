@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+		button {
+			border:none;
+			border:solid 1px rgb(255, 255, 255);
+			color: white;
+			border-radius: 3px;
+			background: rgba(255, 255, 255,0);
+			font-size: 25px;
+			margin: 5px;
+		}
+
+		button:hover {
+			background:black;
+			color:white; 
+		}
+
+		#button1{
+			width: 300px;
+			height: 40px;
+		}
+		#button2{
+			width: 300px;
+			height: 40px;
+		}
+		#container{
+			text-align: center;
+			
+		}
+
+		center {
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+
+	</style>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fermium Selenium</title>
+	<link rel="stylesheet" type="text/css" href="/main.css">
+	<link rel="icon" href="favicon.ico">
+</head>
+<body>
+	<div id="answer"></div>
+	<script src="/scripts/jquery-3.6.0.min.js"></script>
+	<script src="/scripts/logic.js"></script>
+	<script src="app.js"></script>
+	<welcomeText style="text-align: center;">Who said this?</welcomeText>
+	<messageText id="message"></messageText>
+	<div id="container" style="padding-top: 75px;">
+		<button id="button1" onclick="checkWin(this, document.getElementById('answer').value)" value="Author1">Author1</button><button id="button2" onclick="checkWin(this, document.getElementById('answer').value)" value="Author2">Author2</button>
+	</div>
+	<div style="text-align: center; padding-top: 75px;">
+		<scoreText>Your score: </scoreText><scoreText id="score"></scoreText>
+	</div>
+</body>
+</html>
